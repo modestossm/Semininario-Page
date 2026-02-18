@@ -1,0 +1,91 @@
+/* Gerais */
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)),
+  url(./Assets/img/abstract-gradient.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 2.7rem;
+}
+
+.container1 {
+  margin: 3rem 0 1.5rem 0;
+}
+
+footer img {
+  width: 1.5rem;
+}
+
+p, li {
+  color: #444;
+}
+
+/* navbar */
+header, .navbar {
+  background-color: #131212;
+}
+
+/* Sobre */
+.foto {
+  max-width: 100%;
+}
+
+.carousel {
+  margin: .5rem auto;
+  width: 90%;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  
+  width: max-content;
+  align-items: center;
+  gap: 1rem;
+  animation: slider 25s infinite linear;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+.card {
+  flex: 0 0 auto;
+  height: 4rem;
+  padding: 1.25rem;
+  border: 0;
+  background-color: transparent;
+  font-size: 1rem;
+  text-align: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+@keyframes slider {
+  from {transform: translateX(0);}
+  to {transform: translateX(-100%);}
+}
+
+@media screen and (width > 37.5rem) {
+  h1 {
+  font-family: "Cinzel", serif;
+  font-size: 4rem;
+  }
+
+  .container1 {
+    margin: 7rem 0 2.75rem 0;
+  }
+
+  footer img {
+    width: 2rem;
+  }
+}
