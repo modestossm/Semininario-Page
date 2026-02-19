@@ -22,10 +22,6 @@ footer img {
   width: 1.5rem;
 }
 
-p, li {
-  color: #444;
-}
-
 /* navbar */
 header, .navbar {
   background-color: #131212;
